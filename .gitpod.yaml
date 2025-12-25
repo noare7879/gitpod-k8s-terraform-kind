@@ -4,7 +4,8 @@ image:
 tasks:
   - name: Create KIND Cluster
     command: |
-      kind create cluster --config kind-config.yaml || true
+
+      kind create cluster --config=kind-config.yaml || true
       kubectl get nodes
 
 vscode:
